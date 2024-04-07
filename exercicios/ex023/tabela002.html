@@ -23,18 +23,25 @@
         td.numero {
             text-align: right;
         }
+        caption {
+            font-size: 1.2em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
     </style>
 </head>
 <body>
     <h1>Uso de tabelas grandes</h1>
     
     <table>
+        <caption>População das Unidades Federativas</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 100px;">
                     População<br>
-                    Censo 2022
+                    (Censo 2022)
                 </th>
             </tr>
         </thead>
@@ -150,7 +157,7 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de habitantes</th>
+                <th scope="row">Total de habitantes</th>
                 <td class="numero"><strong>203.078.389</strong></td>
             </tr>
         </tfoot>
