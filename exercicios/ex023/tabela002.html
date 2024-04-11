@@ -11,6 +11,7 @@
         table {
             border-collapse: collapse;
             width: 400px;
+            position: relative;
         }
         th, td {
             border: 1px solid black;
@@ -19,6 +20,11 @@
         thead, tfoot {
             background-color: gray;
             color: white;
+        }
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: gray;
         }
         tbody > tr:nth-child(2n) {
             background-color: lightgray;
