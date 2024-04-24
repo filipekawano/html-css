@@ -1,5 +1,30 @@
 @charset "UTF-8";
 
 body {
-    background-color: lightgray;
+    height: 97vh;
+    background: black url("../imagens/fundo-madeira.jpg") no-repeat fixed;
+    background-size: 100% 100%;
+    position: relative;
 }
+
+img, iframe {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+img#iphone {
+    width: 250px;
+}
+
+img#home {
+    width: 216px;
+    height: 386px;
+}
+
+iframe#atelietta {
+    width: 216px;
+    height: 386px;
+}
+
