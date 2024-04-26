@@ -7,7 +7,16 @@ body {
     position: relative;
 }
 
-img, iframe {
+table {
+    float: right;
+}
+
+img.logo {
+    width: 35px;
+    border-radius: 100%;
+}
+
+img#iphone, iframe {
     position: absolute;
     left: 50%;
     top: 50%;
@@ -18,13 +27,7 @@ img#iphone {
     width: 250px;
 }
 
-img#home {
+iframe {
     width: 216px;
     height: 386px;
 }
-
-iframe#atelietta {
-    width: 216px;
-    height: 386px;
-}
-
