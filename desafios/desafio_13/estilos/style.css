@@ -12,8 +12,14 @@ table {
 }
 
 .logo {
-    width: 35px;
+    width: 40px;
     border-radius: 100%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.541);
+}
+.logo:hover {
+    box-sizing: border-box;
+    border: 2px solid rgba(255, 255, 255, 0.644);
+    transform: translate(-3px, -3px);
 }
 
 #iphone, iframe {
