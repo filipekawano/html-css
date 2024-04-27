@@ -16,7 +16,7 @@ table {
     border-radius: 100%;
 }
 
-#iphone, #home, iframe {
+#iphone, iframe {
     position: absolute;
     left: 50%;
     top: 50%;
@@ -27,7 +27,7 @@ table {
     width: 275px;
 }
 
-iframe, #home {
+iframe {
     width: 242px;
     height: 422px;
 }
