@@ -18,28 +18,41 @@
             height: 100vh;
             width: 100vw;
         }
-        .square {
+        .element {
             background-color: red;
             width: 300px;
             height: 300px;
-        }
-        .square:hover {
-            background-color: blue;
-            height: 100%;
             cursor: pointer;
-            /* transform: rotate(180deg); */
-            transform: translate(50px, 0px);
-            /* transform: scale(1.1); */
-            transition: all 2s ease-in-out;
         }
+        /* .element:hover {
+            background-color: blue;
+            border-radius: 50%;
+            transform: rotate(360deg);
+            transform: translate(50px, 0px);
+            transform: scale(1.1);
+            transition: all 1.5s ease-in-out;
+        } */
     </style>
 </head>
 <body>
-    <div class="square">
+    <div class="element" onclick="ficarRedondo()">
         
     </div>
     <script>
-
+        contador = 0
+        var elemento = document.querySelector('div.element')
+        function ficarRedondo() {
+            if (contador % 2 == 0) {
+                elemento.style.backgroundColor = 'blue';
+                elemento.style.borderRadius = '50%';
+            } else {
+                elemento.style.backgroundColor = 'red';
+                elemento.style.borderRadius = 0;
+            }
+            contador += 1;
+            elemento.style.transform = 'rotate(360deg)';
+            elemento.style.transition = 'all 1.5s ease-in-out';
+        }
     </script>
 </body>
 </html>
