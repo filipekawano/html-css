@@ -31,8 +31,6 @@ body {
     color: white;
     font-size: 1.3em;
 }
-/* .button:hover {
-    filter: brightness(1.2);
-    box-shadow: inset 0px 3px 8px rgba(0, 0, 0, 0.521);
-    transform: translate(0, 5px);
-} */
+.button-text::after {
+    content: "Click me";
+}
