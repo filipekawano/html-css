@@ -1,12 +1,12 @@
 @charset "UTF-8";
 
 div.container {
-    display: flex;
-    flex-flow: row wrap;
-    align-content: flex-start;
-    /* align-items: flex-start; */
     background-color: aqua;
     height: 400px;
+    display: flex;
+    flex-flow: row wrap;
+    align-content: space-evenly;
+    /* align-items: flex-start; */
 }
 
 div.item {
